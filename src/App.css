@@ -92,6 +92,6 @@ button:hover {
   border: 1px solid #777;
   transition: all 0.3s;
 }
-form h1 {
+form.login h1, form.register h1 {
   text-align: center;
 }

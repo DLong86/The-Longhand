@@ -1,4 +1,4 @@
-export default function Post() {
+export default function Post({ title, summary, cover, content, createdAt }) {
 	return (
 		<div className="post">
 			<div className="image">
@@ -8,17 +8,14 @@ export default function Post() {
 				/>
 			</div>
 			<div className="texts">
-				<h2>Damon Hill</h2>
+				<h2>{title}</h2>
 				<p className="info">
 					<a href="/" className="author">
 						Dave Long
 					</a>
-					<time>12-04-2023 10:34</time>
+					<time>{createdAt}</time>
 				</p>
-				<p className="summary">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
-					soluta quo accusantium blanditiis, laborum voluptas amet ab numquam!
-				</p>
+				<p className="summary">{summary}</p>
 			</div>
 		</div>
 	);
