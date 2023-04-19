@@ -26,6 +26,7 @@ header {
 header a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 header a.logo {
   font-weight: bold;
@@ -34,6 +35,10 @@ header a.logo {
 header nav {
   display: flex;
   gap: 15px;
+}
+header a:hover {
+  transition: all 0.3s;
+  color: #cab287;
 }
 div.post{
   display: grid;
@@ -80,11 +85,12 @@ input:focus {
 button {
   width: 100%;
   display: block;
-  background-color: #404040;
+  background-color: #cab287;
   color: #fff;
   border: 0;
   border-radius: 5px;
   padding: 7px 0;
+  font-weight: bold;
 }
 button:hover {
   background-color: #fff;
